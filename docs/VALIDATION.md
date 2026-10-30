@@ -32,13 +32,27 @@ inside this Linux build task. Exact Python patch version and CPU architecture
 were not provided. This evidence applies to the prior archive, before TextStats
 and these documentation changes, not to the current 15-test archive.
 
+## Windows evidence for the 15-test archive
+
+On 2026-10-30, the source-kit archive with SHA-256:
+
+`2d6a470d64faff20bf4fc832310d597b60a9f1af7543944e83d6ceabf7bf2b1d`
+
+passed **all 15 tests** on the owner's Windows 10 build 19045 machine with
+Python 3.12, executed via the local debugger. This includes the TextStats tests.
+The evidence is specific to that archive and environment; it does not establish
+other Windows versions, Python patch versions, CPU architectures, or security
+software behavior. These are reported local-debugger results, not Windows
+executions performed inside this Linux build task. Documentation edits change
+archive bytes: do not identify a later rebuilt archive by the tested hash above.
+
 ## Added worked adaptation
 
 TextStats and its guide are covered by five additional Linux subprocess tests:
 exact guide output; Unicode/BOM/CRLF and unterminated final line; empty file;
 invalid UTF-8/missing file/directory; deterministic build. The complete 15-test
-suite passes locally and from a clean extraction. The new example and updated
-archive have not yet been validated on Windows.
+suite passes locally and from a clean extraction. The 15-test Windows result
+for the specific archive above also covers the new example.
 
 Still not established: missing Windows launcher behavior, Defender/SmartScreen,
 installation policy, all Windows path edge cases, multiple Python versions or

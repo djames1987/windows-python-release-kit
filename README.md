@@ -10,8 +10,9 @@ and feedback—not a standalone EXE packager or a paid product.
 ## Start here (about five minutes)
 
 Prerequisite: an existing Python 3.12.x installation. Tested interpreter:
-CPython 3.12.14 on Linux. The prior ReleaseCheck kit passed the specific Windows checks recorded in
-`docs/VALIDATION.md`. The newly added TextStats example is Linux-tested only.
+CPython 3.12.14 on Linux. A source-kit archive including TextStats passed all
+15 tests on Windows 10 build 19045 with Python 3.12 on 2026-10-30. See
+`docs/VALIDATION.md` for the exact tested archive and limits of this evidence.
 These commands are run from this folder in a terminal:
 
 ```powershell

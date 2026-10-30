@@ -23,7 +23,9 @@ The middle command prints exactly:
 
 On Linux use your Python 3.12 executable instead of `py -3.12`. The guide's
 fixture/output and build command are covered by automated subprocess tests.
-The newly added example has been executed on Linux, not yet on Windows.
+The example is covered by the 15-test suite that also passed on Windows 10
+build 19045 with Python 3.12 on 2026-10-30; see `VALIDATION.md` for the
+exact tested archive and scope.
 
 ## What changed from ReleaseCheck
 

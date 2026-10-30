@@ -8,7 +8,7 @@
 - [ ] Confirm archive inventory contains no secrets, private files or caches.
 - [ ] Recheck licensing for everything added; include required notices.
 
-## Windows gate (see VALIDATION.md for completed checks on one prior archive)
+## Windows gate (see VALIDATION.md for archive-specific completed checks)
 - [ ] Use a supported Windows machine with Python 3.12 and launcher installed.
 - [ ] Run `py -3.12 -m unittest discover -s tests -v`.
 - [ ] Run `scripts/build.ps1` if local policy permits; validate nonzero failures.
