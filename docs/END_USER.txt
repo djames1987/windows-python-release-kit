@@ -1,0 +1,24 @@
+ReleaseCheck 0.1.0 — local SHA-256 checksum utility
+
+Requires Python 3.12.x already installed; no interpreter is included.
+Extract the ZIP before use. In a terminal in the extracted folder:
+
+  py -3.12 releasecheck.pyz "C:\path\file.zip"
+  .\releasecheck.cmd "C:\path\file.zip" --expect YOUR_64_CHARACTER_SHA256
+  py -3.12 releasecheck.pyz "C:\path\file.zip" --json
+
+If the py launcher is absent, use the full path to your trusted Python 3.12
+executable instead. Do not download an interpreter from an unsolicited link.
+
+Exit codes: 0 = hash printed or matches; 1 = mismatch; 2 = invalid input or
+file-read error. A hash only checks content against an expected value. It does
+not prove who published a file, that it is malware-free, or that its expected
+hash is trustworthy. Compare with an independent trusted source.
+
+This utility reads files without intentionally changing them. It does not
+upload data or make network requests. Files should not change during hashing.
+This is a prototype. Its launcher hashed the example successfully on one
+Windows 10 build 19045 / Python 3.12 configuration; broad compatibility is
+not established.
+Use from a terminal, not by double-clicking. No installer or uninstaller needed;
+delete the extracted folder to remove it. No settings or registry keys written.
